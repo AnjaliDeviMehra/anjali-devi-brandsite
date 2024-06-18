@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "avenirnext";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "avenirnext";
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "avenirnext";
+  src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype");
+  font-weight: 600;
+}
 html {
   box-sizing: border-box;
 }
@@ -11,6 +26,8 @@ html {
 body {
   padding: 0;
   margin: 0;
+  font-family: "avenirnext";
+  font-weight: 400;
 }
 
 .nav {
@@ -26,4 +43,5 @@ body {
 .nav__link {
   font-size: 1.5rem;
   color: #ffffff;
+  font-family: "avenirnext";
 }/*# sourceMappingURL=bio.css.map */
