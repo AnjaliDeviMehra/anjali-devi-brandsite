@@ -1,16 +1,16 @@
 @font-face {
   font-family: "avenirnext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype"), url("../../assets/fonts/AvenirNextLTPro.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: "avenirnext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../assets/fonts/AvenirNextLTProBold.ttf") format("truetype");
   font-weight: 700;
 }
 @font-face {
   font-family: "avenirnext";
-  src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype");
+  src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype"), url("../../assets/fonts/AvenirNextLTProDemi.ttf") format("truetype");
   font-weight: 600;
 }
 html {
@@ -23,7 +23,7 @@ html {
   box-sizing: inherit;
 }
 
-body {
+* {
   padding: 0;
   margin: 0;
   font-family: "avenirnext";
@@ -40,8 +40,25 @@ body {
   display: block;
   margin: auto;
 }
-.nav__link {
-  font-size: 1.5rem;
+.nav__list {
+  display: flex;
+  list-style: none;
+  margin-top: 0.5rem;
+}
+.nav__section, .nav__active-section {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+.nav__active-section {
+  border-bottom: 3px solid #ffffff;
+}
+.nav__link, .nav__active-link {
   color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.nav__active-link {
   font-family: "avenirnext";
+  font-weight: 600;
 }/*# sourceMappingURL=bio.css.map */

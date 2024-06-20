@@ -7,7 +7,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
-body {
+* {
   padding: 0;
   margin: 0;
   font-family: "avenirnext";
@@ -23,9 +23,30 @@ body {
     display: block;
     margin: auto;
   }
+  &__list {
+    display: flex;
+    list-style: none;
+    margin-top: 0.5rem;
+  }
+  &__section {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.5rem;
+  }
+
+  &__active-section {
+    @extend .nav__section;
+    border-bottom: 3px solid #ffffff;
+  }
+
   &__link {
-    font-size: 1.5rem;
     color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  &__active-link {
+    @extend .nav__link;
     font-family: "avenirnext";
+    font-weight: 600;
   }
 }
