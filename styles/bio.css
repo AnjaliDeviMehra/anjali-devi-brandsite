@@ -61,4 +61,28 @@ html {
 .nav__active-link {
   font-family: "avenirnext";
   font-weight: 600;
+}
+
+.hero {
+  background-image: url(../assets/images/hero-bio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 12.5rem;
+  position: relative;
+}
+.hero__overlay {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.hero__heading {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: "avenirnext";
+  font-weight: 700;
+  padding-top: 5rem;
+  margin-left: 0.5rem;
 }/*# sourceMappingURL=bio.css.map */
