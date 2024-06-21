@@ -34,11 +34,27 @@ html {
   background-color: #323232;
   padding-top: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+}
 .nav__logo {
   height: 1.25rem;
   width: 7.5rem;
   display: block;
   margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .nav__logo {
+    display: inline-block;
+    margin: 1.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav__logo {
+    margin-left: 5rem;
+  }
 }
 .nav__list {
   display: flex;
@@ -50,13 +66,33 @@ html {
   text-align: center;
   padding-bottom: 0.5rem;
 }
+@media screen and (min-width: 768px) {
+  .nav__section, .nav__active-section {
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+    padding-left: 0.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav__section, .nav__active-section {
+    margin-left: 2rem;
+  }
+}
 .nav__active-section {
+  border-bottom: 3px solid #ffffff;
+}
+.nav__section:hover, .nav__active-section:hover {
   border-bottom: 3px solid #ffffff;
 }
 .nav__link, .nav__active-link {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.1rem;
+}
+@media screen and (min-width: 768px) {
+  .nav__link, .nav__active-link {
+    margin-right: 1rem;
+  }
 }
 .nav__active-link {
   font-family: "avenirnext";
@@ -70,6 +106,16 @@ html {
   background-position: center;
   height: 12.5rem;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 20rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    height: 30rem;
+  }
 }
 .hero__overlay {
   background: rgba(0, 0, 0, 0.5);
@@ -85,4 +131,16 @@ html {
   font-weight: 700;
   padding-top: 5rem;
   margin-left: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .hero__heading {
+    font-size: 3.75rem;
+    padding-top: 7rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__heading {
+    margin-left: 3rem;
+    padding-top: 12rem;
+  }
 }/*# sourceMappingURL=bio.css.map */
