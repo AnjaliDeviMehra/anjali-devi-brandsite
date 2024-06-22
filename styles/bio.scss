@@ -87,6 +87,7 @@ html {
   background-position: center;
   height: 12.5rem;
   position: relative;
+  z-index: -2;
 
   @include tablet {
     height: 20rem;
@@ -95,14 +96,6 @@ html {
     height: 30rem;
   }
 
-  &__overlay {
-    background: rgba(0, 0, 0, 0.5);
-    opacity: 1;
-    position: absolute;
-
-    height: 100%;
-    width: 100%;
-  }
   &__heading {
     color: #ffffff;
     font-size: 1.5rem;
@@ -110,6 +103,7 @@ html {
     font-weight: 700;
     padding-top: 5rem;
     margin-left: 0.5rem;
+    z-index: 1;
 
     @include tablet {
       font-size: 3.75rem;
@@ -119,6 +113,142 @@ html {
     @include desktop {
       margin-left: 3rem;
       padding-top: 12rem;
+    }
+  }
+  &__overlay {
+    background-color: #323232;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.musicians {
+  padding: 0 1rem 1rem;
+  background-color: #fafafa;
+
+  @include tablet {
+    padding: 0 2.25rem;
+  }
+
+  &__heading {
+    padding: 1.5rem 0 1rem 0;
+    font-size: 1.5rem;
+    font-family: "avenirnext";
+    font-weight: 700;
+    color: black;
+
+    @include tablet {
+      font-size: 2.25rem;
+      line-height: 2.75rem;
+      padding: 3rem 0 2.25rem;
+    }
+
+    @include desktop {
+      padding-left: 4rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+
+    @include tablet {
+      padding: 0 2.25rem 0;
+      height: 20rem;
+    }
+
+    @include desktop {
+      padding: 0 6rem 0;
+      height: 30rem;
+    }
+  }
+  &__quote {
+    padding-top: 1rem;
+    font-size: 14px;
+    line-height: 1.37rem;
+    font-family: "avenirnext";
+    font-weight: 600;
+
+    @include tablet {
+      padding: 2.25rem;
+      font-size: 1.5rem;
+    }
+
+    @include desktop {
+      padding: 2.25rem 6rem;
+      width: 75vw;
+    }
+  }
+
+  &__vocalist {
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    padding-top: 1rem;
+  }
+
+  &__subheading {
+    font-size: 14px;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    line-height: 22px;
+    font-family: "avenirnext";
+    font-weight: 600;
+
+    @include tablet {
+      padding: 0 2.25rem 0;
+      font-size: 1.5rem;
+    }
+
+    @include desktop {
+      padding: 0 6rem 0;
+    }
+  }
+}
+
+.info-section {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1.3rem;
+  }
+
+  @include desktop {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  &__one {
+    font-size: 13px;
+    line-height: 18px;
+
+    @include tablet {
+      padding-left: 2.25rem;
+      font-size: 14px;
+      line-height: 22px;
+      width: 50%;
+    }
+
+    @include desktop {
+      padding-left: 0;
+    }
+  }
+
+  &__two {
+    margin-top: 1rem;
+    font-size: 13px;
+    line-height: 18px;
+
+    @include tablet {
+      margin-top: 0;
+      padding-left: 2.25rem;
+      font-size: 14px;
+      line-height: 22px;
+      width: 50%;
     }
   }
 }
