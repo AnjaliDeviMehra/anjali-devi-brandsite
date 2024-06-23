@@ -195,7 +195,7 @@ h2 {
 }
 .musicians__quote {
   padding-top: 1rem;
-  font-size: 14px;
+  font-size: 0.88rem;
   line-height: 1.37rem;
   font-family: "avenirnext";
   font-weight: 600;
@@ -220,10 +220,10 @@ h2 {
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 0.88rem;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
-  line-height: 22px;
+  line-height: 1.37rem;
   font-family: "avenirnext";
   font-weight: 600;
 }
@@ -253,14 +253,14 @@ h3 {
   }
 }
 .info-section__one {
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 0.81rem;
+  line-height: 1.12rem;
 }
 @media screen and (min-width: 768px) {
   .info-section__one {
     padding-left: 2.25rem;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 0.88rem;
+    line-height: 1.37rem;
     width: 50%;
   }
 }
@@ -271,15 +271,15 @@ h3 {
 }
 .info-section__two {
   margin-top: 1rem;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 0.81rem;
+  line-height: 1.12rem;
 }
 @media screen and (min-width: 768px) {
   .info-section__two {
     margin-top: 0;
     padding-left: 2.25rem;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 0.88rem;
+    line-height: 1.37rem;
     width: 50%;
   }
 }
@@ -309,6 +309,7 @@ h3 {
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
+  filter: grayscale(80%);
 }
 @media screen and (min-width: 768px) {
   .gallery__image {
@@ -316,6 +317,9 @@ h3 {
     height: auto;
     margin-bottom: 1rem;
   }
+}
+.gallery__image:hover {
+  filter: none;
 }
 
 .footer {
@@ -380,25 +384,25 @@ h3 {
 }
 .footer__info {
   margin-bottom: 1rem;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 0.81rem;
+  line-height: 1.12rem;
 }
 @media screen and (min-width: 768px) {
   .footer__info {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.88rem;
+    line-height: 1.25rem;
   }
 }
 .footer__email {
   text-decoration: none;
   color: white;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 0.81rem;
+  line-height: 1.12rem;
 }
 @media screen and (min-width: 768px) {
   .footer__email {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.88rem;
+    line-height: 1.25rem;
   }
 }
 .footer__logo {
@@ -413,28 +417,28 @@ h3 {
   }
 }
 .footer__copyright {
-  font-size: 10px;
-  line-height: 20px;
+  font-size: 0.62rem;
+  line-height: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .footer__copyright {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
     margin-top: 2rem;
   }
 }
 
 h4 {
-  font-size: 13px;
+  font-size: 0.81rem;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
-  line-height: 18px;
+  line-height: 1.12rem;
   font-family: "avenirnext";
   font-weight: 600;
 }
 @media screen and (min-width: 768px) {
   h4 {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.88rem;
+    line-height: 1.25rem;
   }
 }/*# sourceMappingURL=bio.css.map */

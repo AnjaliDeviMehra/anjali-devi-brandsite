@@ -167,7 +167,7 @@ h2 {
   }
   &__quote {
     padding-top: 1rem;
-    font-size: 14px;
+    font-size: 0.88rem;
     line-height: 1.37rem;
     font-family: "avenirnext";
     font-weight: 600;
@@ -192,10 +192,10 @@ h2 {
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 0.88rem;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
-  line-height: 22px;
+  line-height: 1.37rem;
   font-family: "avenirnext";
   font-weight: 600;
 
@@ -222,13 +222,13 @@ h3 {
   }
 
   &__one {
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 0.81rem;
+    line-height: 1.12rem;
 
     @include tablet {
       padding-left: 2.25rem;
-      font-size: 14px;
-      line-height: 22px;
+      font-size: 0.88rem;
+      line-height: 1.37rem;
       width: 50%;
     }
 
@@ -239,14 +239,14 @@ h3 {
 
   &__two {
     margin-top: 1rem;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 0.81rem;
+    line-height: 1.12rem;
 
     @include tablet {
       margin-top: 0;
       padding-left: 2.25rem;
-      font-size: 14px;
-      line-height: 22px;
+      font-size: 0.88rem;
+      line-height: 1.37rem;
       width: 50%;
     }
   }
@@ -275,12 +275,17 @@ h3 {
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
+    filter: grayscale(80%);
 
     @include tablet {
       width: 32%;
       height: auto;
       margin-bottom: 1rem;
     }
+  }
+
+  &__image:hover {
+    filter: none;
   }
 }
 
@@ -342,21 +347,21 @@ h3 {
   }
   &__info {
     margin-bottom: 1rem;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 0.81rem;
+    line-height: 1.12rem;
     @include tablet {
-      font-size: 14px;
-      line-height: 20px;
+      font-size: 0.88rem;
+      line-height: 1.25rem;
     }
   }
   &__email {
     text-decoration: none;
     color: white;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 0.81rem;
+    line-height: 1.12rem;
     @include tablet {
-      font-size: 14px;
-      line-height: 20px;
+      font-size: 0.88rem;
+      line-height: 1.25rem;
     }
   }
 
@@ -371,30 +376,27 @@ h3 {
     }
   }
   &__copyright {
-    font-size: 10px;
-    line-height: 20px;
+    font-size: 0.62rem;
+    line-height: 1.25rem;
 
     @include tablet {
-      font-size: 12px;
-      line-height: 20px;
+      font-size: 0.75rem;
+      line-height: 1.25rem;
       margin-top: 2rem;
     }
   }
 }
 
 h4 {
-  font-size: 13px;
+  font-size: 0.81rem;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
-  line-height: 18px;
+  line-height: 1.12rem;
   font-family: "avenirnext";
   font-weight: 600;
 
   @include tablet {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  @include desktop {
+    font-size: 0.88rem;
+    line-height: 1.25rem;
   }
 }
