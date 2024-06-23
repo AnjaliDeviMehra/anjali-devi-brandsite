@@ -218,7 +218,8 @@ h2 {
   display: block;
   padding-top: 1rem;
 }
-.musicians__subheading {
+
+h3 {
   font-size: 14px;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
@@ -227,13 +228,13 @@ h2 {
   font-weight: 600;
 }
 @media screen and (min-width: 768px) {
-  .musicians__subheading {
+  h3 {
     padding: 0 2.25rem 0;
     font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  .musicians__subheading {
+  h3 {
     padding: 0 6rem 0;
   }
 }
@@ -314,5 +315,126 @@ h2 {
     width: 32%;
     height: auto;
     margin-bottom: 1rem;
+  }
+}
+
+.footer {
+  background-color: #323232;
+  color: white;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding: 2rem 6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    height: 3.5rem;
+  }
+}
+.footer__heading {
+  color: white;
+  padding-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__heading {
+    display: inline-block;
+    margin-right: 2rem;
+    padding-left: 0;
+  }
+}
+.footer__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1.2rem;
+}
+.footer__side-logo {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .footer__side-logo {
+    display: inline-block;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__sections {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__sections {
+    width: 60vw;
+  }
+}
+.footer__info {
+  margin-bottom: 1rem;
+  font-size: 13px;
+  line-height: 18px;
+}
+@media screen and (min-width: 768px) {
+  .footer__info {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.footer__email {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  line-height: 18px;
+}
+@media screen and (min-width: 768px) {
+  .footer__email {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.footer__logo {
+  height: 1.25rem;
+  width: 7.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    display: none;
+  }
+}
+.footer__copyright {
+  font-size: 10px;
+  line-height: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer__copyright {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 2rem;
+  }
+}
+
+h4 {
+  font-size: 13px;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  line-height: 18px;
+  font-family: "avenirnext";
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  h4 {
+    font-size: 14px;
+    line-height: 20px;
   }
 }/*# sourceMappingURL=bio.css.map */

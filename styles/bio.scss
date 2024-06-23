@@ -189,23 +189,23 @@ h2 {
     display: block;
     padding-top: 1rem;
   }
+}
 
-  &__subheading {
-    font-size: 14px;
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
-    line-height: 22px;
-    font-family: "avenirnext";
-    font-weight: 600;
+h3 {
+  font-size: 14px;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  line-height: 22px;
+  font-family: "avenirnext";
+  font-weight: 600;
 
-    @include tablet {
-      padding: 0 2.25rem 0;
-      font-size: 1.5rem;
-    }
+  @include tablet {
+    padding: 0 2.25rem 0;
+    font-size: 1.5rem;
+  }
 
-    @include desktop {
-      padding: 0 6rem 0;
-    }
+  @include desktop {
+    padding: 0 6rem 0;
   }
 }
 
@@ -264,6 +264,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     @include desktop {
       padding-left: 4rem;
       padding-right: 4rem;
@@ -280,5 +281,120 @@ h2 {
       height: auto;
       margin-bottom: 1rem;
     }
+  }
+}
+
+.footer {
+  background-color: #323232;
+  color: white;
+  padding: 1rem;
+
+  @include tablet {
+    padding: 2.25rem;
+  }
+  @include desktop {
+    padding: 2rem 6rem;
+  }
+
+  &__header {
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      height: 3.5rem;
+    }
+  }
+
+  &__heading {
+    color: white;
+    padding-top: 1rem;
+
+    @include tablet {
+      display: inline-block;
+      margin-right: 2rem;
+      padding-left: 0;
+    }
+  }
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1.2rem;
+  }
+  &__side-logo {
+    display: none;
+
+    @include tablet {
+      display: inline-block;
+      margin-left: auto;
+    }
+  }
+
+  &__sections {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 2rem;
+    }
+
+    @include desktop {
+      width: 60vw;
+    }
+  }
+  &__info {
+    margin-bottom: 1rem;
+    font-size: 13px;
+    line-height: 18px;
+    @include tablet {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  &__email {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    line-height: 18px;
+    @include tablet {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__logo {
+    height: 1.25rem;
+    width: 7.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+
+    @include tablet {
+      display: none;
+    }
+  }
+  &__copyright {
+    font-size: 10px;
+    line-height: 20px;
+
+    @include tablet {
+      font-size: 12px;
+      line-height: 20px;
+      margin-top: 2rem;
+    }
+  }
+}
+
+h4 {
+  font-size: 13px;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  line-height: 18px;
+  font-family: "avenirnext";
+  font-weight: 600;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @include desktop {
   }
 }
