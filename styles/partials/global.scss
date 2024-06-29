@@ -1,0 +1,214 @@
+@use "./typography";
+
+@use "./mixins" as *;
+
+@use "./variables" as *;
+
+.nav {
+  background-color: #323232;
+  padding-top: 1rem;
+
+  @include tablet {
+    display: flex;
+  }
+  &__logo {
+    height: 1.25rem;
+    width: 7.5rem;
+    display: block;
+    margin: auto;
+    @include tablet {
+      display: inline-block;
+      margin: 1.5rem;
+    }
+    @include desktop {
+      margin-left: 5rem;
+    }
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+    margin-top: 0.5rem;
+  }
+  &__section {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.5rem;
+
+    @include tablet {
+      margin-top: 1.2rem;
+      margin-left: 1rem;
+      padding-left: 0.5rem;
+    }
+
+    @include desktop {
+      margin-left: 2rem;
+    }
+  }
+
+  &__active-section {
+    @extend .nav__section;
+    border-bottom: 3px solid #ffffff;
+  }
+  &__section:hover {
+    border-bottom: 3px solid #ffffff;
+  }
+
+  &__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    @include tablet {
+      margin-right: 1rem;
+    }
+  }
+  &__active-link {
+    @extend .nav__link;
+    font-family: "avenirnext";
+    font-weight: 600;
+  }
+}
+h2 {
+  padding: 1.5rem 0 1rem 0;
+  font-size: 1.5rem;
+  font-family: "avenirnext";
+  font-weight: 700;
+  color: black;
+
+  @include tablet {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    padding: 3rem 0 2.25rem;
+  }
+
+  @include desktop {
+    padding-left: 4rem;
+  }
+}
+h3 {
+  font-size: 0.88rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  line-height: 1.37rem;
+  font-family: "avenirnext";
+  font-weight: 600;
+
+  @include tablet {
+    padding: 0 2.25rem 0;
+    font-size: 1.5rem;
+  }
+
+  @include desktop {
+    padding: 0 6rem 0;
+  }
+}
+h4 {
+  font-size: 0.81rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  line-height: 1.12rem;
+  font-family: "avenirnext";
+  font-weight: 600;
+
+  @include tablet {
+    font-size: 0.88rem;
+    line-height: 1.25rem;
+  }
+}
+
+.footer {
+  background-color: #323232;
+  color: white;
+  padding: 1rem;
+
+  @include tablet {
+    padding: 2.25rem;
+  }
+  @include desktop {
+    padding: 2rem 6rem;
+  }
+
+  &__header {
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      height: 3.5rem;
+    }
+  }
+
+  &__heading {
+    color: white;
+    padding-top: 1rem;
+
+    @include tablet {
+      display: inline-block;
+      margin-right: 2rem;
+      padding-left: 0;
+    }
+  }
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1.2rem;
+  }
+  &__side-logo {
+    display: none;
+
+    @include tablet {
+      display: inline-block;
+      margin-left: auto;
+    }
+  }
+
+  &__sections {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 2rem;
+    }
+
+    @include desktop {
+      width: 60vw;
+    }
+  }
+  &__info {
+    margin-bottom: 1rem;
+    font-size: 0.81rem;
+    line-height: 1.12rem;
+    @include tablet {
+      font-size: 0.88rem;
+      line-height: 1.25rem;
+    }
+  }
+  &__email {
+    text-decoration: none;
+    color: white;
+    font-size: 0.81rem;
+    line-height: 1.12rem;
+    @include tablet {
+      font-size: 0.88rem;
+      line-height: 1.25rem;
+    }
+  }
+
+  &__logo {
+    height: 1.25rem;
+    width: 7.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+
+    @include tablet {
+      display: none;
+    }
+  }
+  &__copyright {
+    font-size: 0.62rem;
+    line-height: 1.25rem;
+
+    @include tablet {
+      font-size: 0.75rem;
+      line-height: 1.25rem;
+      margin-top: 2rem;
+    }
+  }
+}

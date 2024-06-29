@@ -30,75 +30,6 @@ html {
   font-weight: 400;
 }
 
-.nav {
-  background-color: #323232;
-  padding-top: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .nav {
-    display: flex;
-  }
-}
-.nav__logo {
-  height: 1.25rem;
-  width: 7.5rem;
-  display: block;
-  margin: auto;
-}
-@media screen and (min-width: 768px) {
-  .nav__logo {
-    display: inline-block;
-    margin: 1.5rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .nav__logo {
-    margin-left: 5rem;
-  }
-}
-.nav__list {
-  display: flex;
-  list-style: none;
-  margin-top: 0.5rem;
-}
-.nav__section, .nav__active-section {
-  width: 100%;
-  text-align: center;
-  padding-bottom: 0.5rem;
-}
-@media screen and (min-width: 768px) {
-  .nav__section, .nav__active-section {
-    margin-top: 1.2rem;
-    margin-left: 1rem;
-    padding-left: 0.5rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .nav__section, .nav__active-section {
-    margin-left: 2rem;
-  }
-}
-.nav__active-section {
-  border-bottom: 3px solid #ffffff;
-}
-.nav__section:hover, .nav__active-section:hover {
-  border-bottom: 3px solid #ffffff;
-}
-.nav__link, .nav__active-link {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.1rem;
-}
-@media screen and (min-width: 768px) {
-  .nav__link, .nav__active-link {
-    margin-right: 1rem;
-  }
-}
-.nav__active-link {
-  font-family: "avenirnext";
-  font-weight: 600;
-}
-
 .hero {
   background-image: url(../assets/images/hero-bio.jpg);
   background-repeat: no-repeat;
@@ -147,26 +78,6 @@ html {
   height: 100%;
   width: 100%;
   z-index: -1;
-}
-
-h2 {
-  padding: 1.5rem 0 1rem 0;
-  font-size: 1.5rem;
-  font-family: "avenirnext";
-  font-weight: 700;
-  color: black;
-}
-@media screen and (min-width: 768px) {
-  h2 {
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-    padding: 3rem 0 2.25rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  h2 {
-    padding-left: 4rem;
-  }
 }
 
 .musicians {
@@ -219,26 +130,6 @@ h2 {
   padding-top: 1rem;
 }
 
-h3 {
-  font-size: 0.88rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
-  line-height: 1.37rem;
-  font-family: "avenirnext";
-  font-weight: 600;
-}
-@media screen and (min-width: 768px) {
-  h3 {
-    padding: 0 2.25rem 0;
-    font-size: 1.5rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  h3 {
-    padding: 0 6rem 0;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .info-section {
     display: flex;
@@ -248,8 +139,7 @@ h3 {
 }
 @media screen and (min-width: 1280px) {
   .info-section {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding: 0 6rem 0;
   }
 }
 .info-section__one {
@@ -322,127 +212,6 @@ h3 {
   filter: none;
 }
 
-.footer {
-  background-color: #323232;
-  color: white;
-  padding: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    padding: 2.25rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .footer {
-    padding: 2rem 6rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    height: 3.5rem;
-  }
-}
-.footer__heading {
-  color: white;
-  padding-top: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .footer__heading {
-    display: inline-block;
-    margin-right: 2rem;
-    padding-left: 0;
-  }
-}
-.footer__icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 1.2rem;
-}
-.footer__side-logo {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .footer__side-logo {
-    display: inline-block;
-    margin-left: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__sections {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 2rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .footer__sections {
-    width: 60vw;
-  }
-}
-.footer__info {
-  margin-bottom: 1rem;
-  font-size: 0.81rem;
-  line-height: 1.12rem;
-}
-@media screen and (min-width: 768px) {
-  .footer__info {
-    font-size: 0.88rem;
-    line-height: 1.25rem;
-  }
-}
-.footer__email {
-  text-decoration: none;
-  color: white;
-  font-size: 0.81rem;
-  line-height: 1.12rem;
-}
-@media screen and (min-width: 768px) {
-  .footer__email {
-    font-size: 0.88rem;
-    line-height: 1.25rem;
-  }
-}
-.footer__logo {
-  height: 1.25rem;
-  width: 7.5rem;
-  margin-bottom: 0.5rem;
-  margin-top: 2rem;
-}
-@media screen and (min-width: 768px) {
-  .footer__logo {
-    display: none;
-  }
-}
-.footer__copyright {
-  font-size: 0.62rem;
-  line-height: 1.25rem;
-}
-@media screen and (min-width: 768px) {
-  .footer__copyright {
-    font-size: 0.75rem;
-    line-height: 1.25rem;
-    margin-top: 2rem;
-  }
-}
-
-h4 {
-  font-size: 0.81rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
-  line-height: 1.12rem;
-  font-family: "avenirnext";
-  font-weight: 600;
-}
-@media screen and (min-width: 768px) {
-  h4 {
-    font-size: 0.88rem;
-    line-height: 1.25rem;
-  }
-}
-
 .comments-section {
   padding: 0 1rem 1rem;
 }
@@ -456,13 +225,34 @@ h4 {
     padding: 0 6rem 0;
   }
 }
-.comments-section__image {
+
+.form-container {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .form-container {
+    padding: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .form-container {
+    padding: 0 20rem;
+  }
+}
+.form-container__image {
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 10%;
+     object-position: 10%;
 }
-.comments-section__form {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .form-container__image {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 
 .comments-form {
@@ -473,6 +263,12 @@ h4 {
   line-height: 1.25rem;
   font-family: "avenirnext";
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .comments-form {
+    font-size: 0.75rem;
+    width: 100%;
+  }
 }
 .comments-form__label {
   display: block;
@@ -485,6 +281,7 @@ h4 {
   border-radius: 4px;
   padding: 0.75rem;
   border: 1px solid #e1e1e1;
+  background-color: #fafafa;
 }
 .comments-form__input:focus {
   border: 1px solid #323232;
@@ -503,14 +300,76 @@ h4 {
   font-weight: 700;
   margin-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .comments-form__button {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 2rem;
+    display: block;
+    margin-left: auto;
+    font-size: 0.75rem;
+  }
+}
 
 .comments {
   list-style: none;
-  border-top: 1px solid #e1e1e1;
+  border-bottom: 2px solid #e1e1e1;
+}
+@media screen and (min-width: 768px) {
+  .comments {
+    padding: 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments {
+    padding: 0 20rem;
+  }
 }
 .comments__list-item {
   display: flex;
+  flex-wrap: wrap;
+  border-top: 2px solid #e1e1e1;
+  padding: 1rem 0;
 }
-.comments__avatar {
+.comments__avatar-container {
   background-color: #e1e1e1;
+  display: inline-block;
+  border-radius: 50%;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.comments__avatar[src=""] {
+  display: none;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.user-comments {
+  display: inline-block;
+  margin-left: 1rem;
+  flex-grow: 2;
+  width: 70%;
+}
+.user-comments__header {
+  display: flex;
+  justify-content: space-between;
+}
+.user-comments__name {
+  font-family: "avenirnext";
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+.user-comments__date {
+  text-align: end;
+  color: #afafaf;
+  font-size: 0.88rem;
+  font-family: "avenirnext";
+  font-weight: 600;
+}
+.user-comments__comment {
+  font-size: 0.81rem;
+  margin-top: 0.5rem;
+  text-wrap: wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }/*# sourceMappingURL=bio.css.map */
