@@ -4,6 +4,21 @@
 
 @use "./variables" as *;
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "avenirnext";
+  font-weight: 400;
+}
+
 .nav {
   background-color: #323232;
   padding-top: 1rem;
@@ -67,6 +82,58 @@
     font-weight: 600;
   }
 }
+
+.hero {
+  background-image: $bio-hero-image;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 12.5rem;
+  position: relative;
+  z-index: -2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @include tablet {
+    height: 20rem;
+  }
+  @include desktop {
+    height: 30rem;
+  }
+
+  &__heading {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: "avenirnext";
+    font-weight: 700;
+    margin-left: 0.5rem;
+    z-index: 1;
+
+    @include tablet {
+      font-size: 3.75rem;
+    }
+
+    @include desktop {
+      margin-left: 3rem;
+    }
+  }
+  &__overlay {
+    background-color: #323232;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.hero--shows {
+  @extend .hero;
+  background-image: $shows-hero-image;
+}
+
 h2 {
   padding: 1.5rem 0 1rem 0;
   font-size: 1.5rem;
