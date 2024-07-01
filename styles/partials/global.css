@@ -150,7 +150,9 @@ html {
 }
 
 .hero--shows {
+  height: 14rem;
   background-image: url("../../assets/images/hero-shows.jpg");
+  justify-content: space-evenly;
 }
 
 h2 {
