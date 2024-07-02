@@ -10,15 +10,41 @@
     font-size: 0.88rem;
     font-family: "avenirnext";
     font-weight: 600;
-    margin: 1rem 1rem 0;
+    margin: 2rem 1rem 1rem;
+
+    @include tablet {
+      font-size: 1.5rem;
+      margin-left: 2.5rem;
+    }
+    @include desktop {
+      margin-left: 3rem;
+    }
   }
   &__iframe {
     padding: 0 1rem 1rem;
     height: 5rem;
+
+    @include tablet {
+      height: auto;
+      width: 30rem;
+      padding-left: 2.25rem;
+    }
+    @include desktop {
+      height: auto;
+      width: 50rem;
+    }
   }
   &__heading {
     width: 70%;
     padding-left: 0.5rem;
+    @include tablet {
+      width: 75%;
+      padding-left: 0;
+    }
+
+    @include desktop {
+      display: inline-block;
+    }
   }
 }
 
@@ -35,7 +61,7 @@
     padding: 2rem 1rem 1rem;
 
     @include tablet {
-      padding: 3rem 2.25rem 0;
+      padding: 2.25rem 2.25rem 0;
       margin: 0 1rem;
     }
 

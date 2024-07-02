@@ -132,6 +132,7 @@ html {
 @media screen and (min-width: 768px) {
   .hero__heading {
     font-size: 3.75rem;
+    margin-left: 2.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -153,6 +154,20 @@ html {
   height: 14rem;
   background-image: url("../../assets/images/hero-shows.jpg");
   justify-content: space-evenly;
+}
+@media screen and (min-width: 768px) {
+  .hero--shows {
+    height: 25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero--shows {
+    height: 35rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 4rem;
+  }
 }
 
 h2 {
