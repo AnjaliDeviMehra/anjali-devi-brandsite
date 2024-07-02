@@ -50,6 +50,7 @@
 
 .shows {
   margin-bottom: 1rem;
+
   @include tablet {
     margin-bottom: 2rem;
   }
@@ -88,7 +89,7 @@
   @include tablet {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2.25rem;
+    padding: 1.5rem 2.25rem;
     margin: 0 1rem;
   }
 
@@ -102,6 +103,12 @@
       justify-content: flex-start;
       width: 80%;
     }
+  }
+  &:hover {
+    background-color: #fafafa;
+  }
+  &--active {
+    background-color: #e1e1e1;
   }
 
   &__title {

@@ -1,5 +1,4 @@
 const showsContainer = document.querySelector(".shows__container");
-console.log(showsContainer);
 
 const showsarray = [
   {
@@ -57,7 +56,6 @@ for (const show of showsarray) {
   const showsList = document.createElement("dl");
 
   showsList.classList.add("shows-list");
-  console.log(showsList);
   showsContainer.appendChild(showsList);
 
   const dateLabel = document.createElement("dt");
@@ -95,3 +93,13 @@ for (const show of showsarray) {
   button.textContent = "BUY TICKETS";
   showsList.appendChild(button);
 }
+
+const showsLists = document.querySelectorAll(".shows-list");
+console.log(showsLists);
+
+showsLists.forEach((row) => {
+  row.addEventListener("click", function () {
+    showsLists.forEach((r) => r.classList.remove("shows-list--active"));
+    this.classList.add("shows-list--active");
+  });
+});

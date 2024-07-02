@@ -219,9 +219,6 @@
 .comments-form__input:focus {
   border: 1px solid #323232;
 }
-.comments-form__input--error {
-  border: 1px solid #d22d2d;
-}
 .comments-form__button {
   height: 2.5rem;
   width: 100%;
