@@ -2,6 +2,31 @@ import apiData from "./band-site-api.js";
 
 const showsContainer = document.querySelector(".shows__container");
 
+function getDate(timestamp) {
+  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+
+  const newdate = new Date(timestamp);
+  const dayName = days[newdate.getDay()];
+  const date = String(newdate.getDate()).padStart(2, 0);
+  const monthName = months[newdate.getMonth()];
+  const year = newdate.getFullYear();
+
+  return `${dayName} ${monthName} ${date} ${year}`;
+}
 async function retrieveShows() {
   const showsArray = await apiData.getShows();
   console.log(showsArray);
@@ -35,14 +60,10 @@ async function retrieveShows() {
     dateLabel.textContent = "DATE";
     showsList.appendChild(dateLabel);
 
-    const newdate = new Date(show.date);
-    const day = newdate.getDate();
-    const month = newdate.getMonth() + 1;
-    const year = newdate.getFullYear();
-    const date = document.createElement("dd");
-    date.classList.add("shows-list__description--bold");
-    date.textContent = `${day}/${month}/${year}`;
-    showsList.appendChild(date);
+    const dateElement = document.createElement("dd");
+    dateElement.classList.add("shows-list__description--bold");
+    dateElement.textContent = getDate(show.date);
+    showsList.appendChild(dateElement);
 
     const vanueLabel = document.createElement("dt");
     vanueLabel.classList.add("shows-list__title");

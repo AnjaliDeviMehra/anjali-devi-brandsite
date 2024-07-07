@@ -10,11 +10,11 @@
     font-size: 0.88rem;
     font-family: "avenirnext";
     font-weight: 600;
-    margin: 2rem 1rem 1rem;
+    padding: 2rem 1.2rem 1rem;
 
     @include tablet {
       font-size: 1.5rem;
-      margin-left: 2.5rem;
+      padding-left: 2.25rem;
     }
     @include desktop {
       margin-left: 3rem;
@@ -22,7 +22,7 @@
   }
   &__iframe {
     padding: 0 1rem 1rem;
-    height: 5rem;
+    height: 8rem;
 
     @include tablet {
       height: auto;
@@ -36,10 +36,12 @@
   }
   &__heading {
     width: 70%;
+    margin-top: 0.5rem;
 
     @include tablet {
       width: 75%;
       padding-left: 0;
+      margin-top: 1rem;
     }
 
     @include desktop {
@@ -49,21 +51,19 @@
 }
 
 .shows {
-  margin-bottom: 1rem;
-
   @include tablet {
     margin-bottom: 2rem;
+    margin: 2.25rem 0;
   }
   @include desktop {
     display: flex;
+    padding: $desktop-padding;
   }
 
   &__heading {
-    padding: 2rem 1rem 1rem;
-
+    padding: 1.5rem 1rem 0;
     @include tablet {
-      padding: 2.25rem 2.25rem 0;
-      margin: 0 1rem;
+      padding-left: 2.25rem;
     }
 
     @include desktop {
@@ -83,13 +83,13 @@
 
 .shows-list {
   border-bottom: 1px solid #e1e1e1;
+  padding: 1rem;
   margin-bottom: 1rem;
-  padding: $mobile-padding;
 
   @include tablet {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 2.25rem;
+    padding: 1rem 1.25rem;
     margin: 0 1rem;
   }
 
@@ -116,7 +116,7 @@
     font-family: "avenirnext";
     font-weight: 700;
     font-size: 0.63rem;
-    padding-top: 0.6rem;
+    padding-top: 0.8rem;
 
     @include tablet {
       display: none;
@@ -137,7 +137,7 @@
   }
 
   &__description {
-    padding-top: 0.5rem;
+    padding-top: 0.3rem;
     font-size: 0.81rem;
 
     @include tablet {
@@ -158,7 +158,7 @@
     font-family: "avenirnext";
     font-weight: 700;
     height: 2.5rem;
-    margin: 1rem 0 0;
+    margin: 1rem 0 0rem;
     width: 100%;
     border-radius: 4px;
     font-size: 0.62rem;
