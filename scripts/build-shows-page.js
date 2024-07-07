@@ -95,12 +95,11 @@ async function retrieveShows() {
 
 function addActiveClass() {
   const showsLists = document.querySelectorAll(".shows-list");
-  console.log(showsLists);
+
   for (const show of showsLists) {
     show.addEventListener("click", function (e) {
       showsLists.forEach((r) => r.classList.remove("shows-list--active"));
       this.classList.add("shows-list--active");
-      console.log("added");
     });
   }
 }
