@@ -1,3 +1,5 @@
+import apiData from "./band-site-api.js";
+
 const showsContainer = document.querySelector(".shows__container");
 
 const showsarray = [
@@ -33,6 +35,7 @@ const showsarray = [
   },
 ];
 
+apiData.getShows();
 const tabletList = document.createElement("dl");
 tabletList.classList.add("shows-list--tablet");
 showsContainer.appendChild(tabletList);
@@ -95,7 +98,6 @@ for (const show of showsarray) {
 }
 
 const showsLists = document.querySelectorAll(".shows-list");
-console.log(showsLists);
 
 showsLists.forEach((row) => {
   row.addEventListener("click", function () {

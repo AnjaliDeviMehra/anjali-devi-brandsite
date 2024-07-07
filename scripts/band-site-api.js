@@ -1,0 +1,50 @@
+const apiKey = "572f3eaf-b8bb-4894-b719-286e3bfc4ee6";
+
+class BandSiteApi {
+  constructor(apiKey) {
+    this.apiKey = apiKey;
+    this.baseUrl = "https://unit-2-project-api-25c1595833b2.herokuapp.com/";
+  }
+  async postComment(comment) {
+    try {
+      await axios.post(
+        `${this.baseUrl}comments?api_key=${this.apiKey}`,
+        comment
+      );
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
+  async getComment() {
+    try {
+      const comments = await axios.get(
+        `${this.baseUrl}comments?api_key=${this.apiKey}`
+      );
+      comments.data.sort((a, b) => {
+        return b.timestamp - a.timestamp;
+      });
+      // console.log(comments.data);
+      return comments.data;
+    } catch (e) {
+      console.log(e);
+      console.log("error");
+    }
+  }
+
+  async getShows() {
+    try {
+      const shows = await axios.get(
+        `${this.baseUrl}showdates?api_key=${this.apiKey}`
+      );
+      return shows.data;
+    } catch (e) {
+      console.log(e);
+      console.log("error");
+    }
+  }
+}
+
+const apiData = new BandSiteApi(apiKey);
+
+export default apiData;

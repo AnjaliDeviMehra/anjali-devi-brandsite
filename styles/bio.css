@@ -268,11 +268,6 @@
   width: 2.25rem;
   height: 2.25rem;
 }
-.comments__avatar[src=""] {
-  display: none;
-  width: 2.25rem;
-  height: 2.25rem;
-}
 
 .user-comments {
   display: inline-block;
