@@ -37,6 +37,7 @@ html {
 @media screen and (min-width: 768px) {
   .nav {
     display: flex;
+    padding-top: 2rem;
   }
 }
 .nav__logo {
@@ -48,18 +49,23 @@ html {
 @media screen and (min-width: 768px) {
   .nav__logo {
     display: inline-block;
-    margin: 1.5rem;
+    margin-left: 2.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .nav__logo {
-    margin-left: 5rem;
+    margin-left: 6rem;
   }
 }
 .nav__list {
   display: flex;
   list-style: none;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    margin-top: 0;
+  }
 }
 .nav__section, .nav__active-section {
   width: 100%;
@@ -68,14 +74,13 @@ html {
 }
 @media screen and (min-width: 768px) {
   .nav__section, .nav__active-section {
-    margin-top: 1.2rem;
-    margin-left: 1rem;
-    padding-left: 0.5rem;
+    padding-bottom: 1.5rem;
+    margin-left: 2.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .nav__section, .nav__active-section {
-    margin-left: 2rem;
+    margin-left: 3rem;
   }
 }
 .nav__active-section {
@@ -88,11 +93,6 @@ html {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.1rem;
-}
-@media screen and (min-width: 768px) {
-  .nav__link, .nav__active-link {
-    margin-right: 1rem;
-  }
 }
 .nav__active-link {
   font-family: "avenirnext";
@@ -113,12 +113,12 @@ html {
 }
 @media screen and (min-width: 768px) {
   .hero, .hero--shows {
-    height: 20rem;
+    height: 25rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero, .hero--shows {
-    height: 30rem;
+    height: 35rem;
   }
 }
 .hero__heading {
@@ -126,7 +126,7 @@ html {
   font-size: 1.5rem;
   font-family: "avenirnext";
   font-weight: 700;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   z-index: 1;
 }
 @media screen and (min-width: 768px) {
@@ -137,7 +137,7 @@ html {
 }
 @media screen and (min-width: 1280px) {
   .hero__heading {
-    margin-left: 3rem;
+    margin-left: 6rem;
   }
 }
 .hero__overlay {
@@ -155,14 +155,8 @@ html {
   background-image: url("../../assets/images/hero-shows.jpg");
   justify-content: space-evenly;
 }
-@media screen and (min-width: 768px) {
-  .hero--shows {
-    height: 25rem;
-  }
-}
 @media screen and (min-width: 1280px) {
   .hero--shows {
-    height: 35rem;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -171,7 +165,6 @@ html {
 }
 
 h2 {
-  padding: 1.5rem 0 1rem 0;
   font-size: 1.5rem;
   font-family: "avenirnext";
   font-weight: 700;
@@ -181,12 +174,6 @@ h2 {
   h2 {
     font-size: 2.25rem;
     line-height: 2.75rem;
-    padding: 3rem 0 2.25rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  h2 {
-    padding-left: 4rem;
   }
 }
 
@@ -232,12 +219,12 @@ h4 {
 }
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 2.25rem;
+    padding: 3rem 2.25rem 2.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer {
-    padding: 2rem 6rem;
+    padding: 3rem 6rem 2.25rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -250,13 +237,12 @@ h4 {
 }
 .footer__heading {
   color: white;
-  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   .footer__heading {
     display: inline-block;
     margin-right: 2rem;
-    padding-left: 0;
   }
 }
 .footer__icon {

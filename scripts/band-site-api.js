@@ -24,7 +24,7 @@ class BandSiteApi {
       comments.data.sort((a, b) => {
         return b.timestamp - a.timestamp;
       });
-      // console.log(comments.data);
+
       return comments.data;
     } catch (e) {
       console.log(e);

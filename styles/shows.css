@@ -50,7 +50,6 @@
 }
 .hero__heading {
   width: 70%;
-  padding-left: 0.5rem;
 }
 @media screen and (min-width: 768px) {
   .hero__heading {
@@ -103,7 +102,7 @@
 .shows-list, .shows-list--tablet {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 1rem;
-  padding: 0 1rem 1rem;
+  padding: 1.5rem 1rem 1rem;
 }
 @media screen and (min-width: 768px) {
   .shows-list, .shows-list--tablet {

@@ -48,24 +48,20 @@ retrieveComments();
 
 function addNewComment(newComment) {
   apiData.postComment(newComment);
-  comments.textContent = "";
+  comments.textContent = " ";
 }
 
 const commentForm = document.querySelector(".comments-form");
 commentForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const newName = e.target.name.value;
-  console.log(newName);
   const newComment = e.target.comment.value;
-  const today = new Date().toLocaleDateString();
-  console.log(today);
-
-  console.log(newComment);
   const newCommentObject = {
     name: newName,
     comment: newComment,
   };
   addNewComment(newCommentObject);
   retrieveComments();
+
   commentForm.reset();
 });
