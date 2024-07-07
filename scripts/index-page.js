@@ -4,7 +4,7 @@ const comments = document.querySelector(".comments");
 
 async function retrieveComments() {
   const commentsArray = await apiData.getComment();
-
+  console.log(commentsArray);
   for (const comment of commentsArray) {
     const commentElement = document.createElement("li");
     commentElement.classList.add("comments__list-item");
@@ -46,9 +46,10 @@ async function retrieveComments() {
 
 retrieveComments();
 
-function addNewComment(newComment) {
-  apiData.postComment(newComment);
+async function addNewComment(newComment) {
+  await apiData.postComment(newComment);
   comments.textContent = " ";
+  retrieveComments();
 }
 
 const commentForm = document.querySelector(".comments-form");
@@ -61,7 +62,6 @@ commentForm.addEventListener("submit", (e) => {
     comment: newComment,
   };
   addNewComment(newCommentObject);
-  retrieveComments();
 
   commentForm.reset();
 });
