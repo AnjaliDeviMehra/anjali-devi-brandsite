@@ -30,7 +30,6 @@ class BandSiteApi {
       return comments.data;
     } catch (e) {
       console.log(e);
-      console.log("error");
     }
   }
 
@@ -42,7 +41,6 @@ class BandSiteApi {
       return shows.data;
     } catch (e) {
       console.log(e);
-      console.log("error");
     }
   }
 }

@@ -4,7 +4,7 @@ const comments = document.querySelector(".comments");
 
 async function retrieveComments() {
   const commentsArray = await apiData.getComment();
-  console.log(commentsArray);
+
   for (const comment of commentsArray) {
     const commentElement = document.createElement("li");
     commentElement.classList.add("comments__list-item");

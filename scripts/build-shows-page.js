@@ -27,9 +27,9 @@ function getDate(timestamp) {
 
   return `${dayName} ${monthName} ${date} ${year}`;
 }
+
 async function retrieveShows() {
   const showsArray = await apiData.getShows();
-  console.log(showsArray);
   const tabletList = document.createElement("dl");
   tabletList.classList.add("shows-list--tablet");
   showsContainer.appendChild(tabletList);
@@ -53,6 +53,7 @@ async function retrieveShows() {
     const showsList = document.createElement("dl");
 
     showsList.classList.add("shows-list");
+
     showsContainer.appendChild(showsList);
 
     const dateLabel = document.createElement("dt");
@@ -92,12 +93,17 @@ async function retrieveShows() {
   }
 }
 
-retrieveShows();
-const showsLists = document.querySelectorAll(".shows-list");
-
-showsLists.forEach((row) => {
-  row.addEventListener("click", function () {
-    showsLists.forEach((r) => r.classList.remove("shows-list--active"));
-    this.classList.add("shows-list--active");
-  });
+function addActiveClass() {
+  const showsLists = document.querySelectorAll(".shows-list");
+  console.log(showsLists);
+  for (const show of showsLists) {
+    show.addEventListener("click", function (e) {
+      showsLists.forEach((r) => r.classList.remove("shows-list--active"));
+      this.classList.add("shows-list--active");
+      console.log("added");
+    });
+  }
+}
+retrieveShows().then(() => {
+  addActiveClass();
 });
