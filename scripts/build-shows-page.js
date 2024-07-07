@@ -87,7 +87,7 @@ async function retrieveShows() {
 
     const button = document.createElement("button");
     button.classList.add("shows-list__button");
-    button.textContent = "BUY TICKETS";
+    button.textContent = "BUY  TICKETS";
     showsList.appendChild(button);
   }
 }

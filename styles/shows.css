@@ -28,7 +28,7 @@
 }
 @media screen and (min-width: 1280px) {
   .hero__album-name {
-    margin-left: 3rem;
+    padding-left: 6rem;
   }
 }
 .hero__iframe {
@@ -46,6 +46,7 @@
   .hero__iframe {
     height: auto;
     width: 50rem;
+    margin-right: 6rem;
   }
 }
 .hero__heading {
@@ -61,6 +62,7 @@
 }
 @media screen and (min-width: 1280px) {
   .hero__heading {
+    margin-left: 0;
     display: inline-block;
   }
 }
@@ -75,6 +77,7 @@
   .shows {
     display: flex;
     padding: 3rem 6rem 2.25rem;
+    margin: 0;
   }
 }
 .shows__heading {
@@ -88,7 +91,7 @@
 @media screen and (min-width: 1280px) {
   .shows__heading {
     display: inline-block;
-    margin-left: 3.5rem;
+    padding-left: 0;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -101,7 +104,7 @@
 
 .shows-list, .shows-list--tablet {
   border-bottom: 1px solid #e1e1e1;
-  padding: 1rem;
+  padding: 0 1rem 1rem;
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
@@ -144,7 +147,7 @@
 @media screen and (min-width: 768px) {
   .shows-list__title--tablet {
     display: inline-block;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     width: 32%;
   }
 }
